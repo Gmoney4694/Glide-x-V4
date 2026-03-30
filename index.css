@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-uber-black: #000000;
+  --color-uber-white: #FFFFFF;
+  --color-uber-gray-50: #F6F6F6;
+  --color-uber-gray-100: #EEEEEE;
+  --color-uber-gray-200: #E2E2E2;
+  --color-uber-gray-500: #6B6B6B;
+  --color-uber-blue: #276EF1;
+}
+
+@layer base {
+  body {
+    @apply bg-uber-gray-50 text-uber-black antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+}
+
+.map-gradient {
+  background: radial-gradient(circle at 50% 50%, #ffffff 0%, #f0f0f0 100%);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

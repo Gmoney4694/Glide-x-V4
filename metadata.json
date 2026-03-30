@@ -1,0 +1,8 @@
+{
+  "name": "Glide X - Premium Ride Hailing",
+  "description": "A minimalist, high-contrast ride-hailing interface inspired by modern urban mobility apps.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera"
+  ]
+}
